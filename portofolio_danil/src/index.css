@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    /* Kunci utama agar semua scroll meluncur halus */
+    scroll-behavior: smooth !important;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    @apply bg-black text-white; /* Memastikan background default hitam */
+  }
+
+  /* Memberikan jarak agar saat mendarat, judul tidak tertutup navbar */
+  section, [id] {
+    scroll-margin-top: 100px;
+  }
+}
